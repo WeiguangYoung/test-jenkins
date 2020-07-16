@@ -14,8 +14,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'pwd'
-                sh 'cd /tmp'
-                sh 'pwd'
+                sh 'ls'
                 sh 'touch test.txt'
                 echo 'Touching is OK'
 
