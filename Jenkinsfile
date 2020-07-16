@@ -15,6 +15,8 @@ pipeline {
             steps {
                 sh 'cd /home/ubuntu'
                 sh 'touch test.txt'
+                echo 'Touching is OK'
+
             }
         }
     }
