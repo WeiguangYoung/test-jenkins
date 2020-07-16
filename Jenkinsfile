@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'flask run'
+                sh 'flask run -p 5001'
                 echo 'Touching is OK'
 
             }
