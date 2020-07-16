@@ -13,7 +13,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying'
+                sh 'cd /home/ubuntu'
+                sh 'touch test.txt'
             }
         }
     }
