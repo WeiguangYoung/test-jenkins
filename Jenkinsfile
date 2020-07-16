@@ -13,9 +13,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'pwd'
-                sh 'ls'
-                sh 'touch test.txt'
+                sh 'flask run'
                 echo 'Touching is OK'
 
             }
